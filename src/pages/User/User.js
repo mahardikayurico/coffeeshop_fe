@@ -12,7 +12,9 @@ const User = () => {
   const { id } = useParams();
 
   const getUserById = (id) => {
-    return axios.get(`http://localhost:5000/api/v1/user/${id}`);
+    return axios.get(
+      `https://enthusiastic-lion-neckerchief.cyclic.app/api/v1/user/${id}`
+    );
   };
 
   React.useEffect(() => {
@@ -44,7 +46,7 @@ const User = () => {
               <div className="p-[2rem]">
                 <img
                   className="rounded-full h-32 w-32 mx-auto"
-                  src={`http://localhost:5000/public/uploads/Images/${image}`}
+                  src={`https://enthusiastic-lion-neckerchief.cyclic.app/api/v1/public/uploads/Images/${image}`}
                   alt="Shoes"
                 ></img>
                 <div className="flex flex-row justify-end"></div>
@@ -122,7 +124,7 @@ const User = () => {
               <button className="mt-2 btn btn-primary"> Save Change </button>
               <button className="mt-2 btn btn-primary"> Cancel </button>
               <button className="mt-2 btn btn-primary"> Edit Password</button>
-              <button className="mt-2 btn btn-primary" onClick={handleRemove} >
+              <button className="mt-2 btn btn-primary" onClick={handleRemove}>
                 {" "}
                 Log out
               </button>

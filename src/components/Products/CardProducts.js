@@ -14,7 +14,7 @@ const CardProducts = (props) => {
   const navigate = useNavigate();
   React.useEffect(() => {
     axios
-      .get("http://localhost:5000/api/v1/products")
+      .get("https://enthusiastic-lion-neckerchief.cyclic.app/api/v1/products")
       .then((response) => {
         setData(response.data.data);
         console.log(response.data.data);
@@ -34,7 +34,7 @@ const CardProducts = (props) => {
           <figure>
             <img
               className="rounded-full h-28 w-28 shadow-xl mt-2"
-              src={`http://localhost:5000/public/uploads/Images/${item.images[0].filename}`}
+              src={`https://enthusiastic-lion-neckerchief.cyclic.app/public/uploads/Images/${item.images[0].filename}`}
               alt="Shoes"
             />
           </figure>

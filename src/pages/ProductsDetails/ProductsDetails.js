@@ -13,7 +13,9 @@ const ProductsDetails = () => {
   const navigate = useNavigate();
 
   const getProductById = (id) => {
-    return axios.get(`http://localhost:5000/api/v1/products/${id}`);
+    return axios.get(
+      `https://enthusiastic-lion-neckerchief.cyclic.app/api/v1/products/${id}`
+    );
   };
 
   React.useEffect(() => {
@@ -47,7 +49,7 @@ const ProductsDetails = () => {
                 ))} */}
               <img
                 className="rounded-full h-32 w-32 mx-auto"
-                src={`http://localhost:5000/public/uploads/Images/${image}`}
+                src={`https://enthusiastic-lion-neckerchief.cyclic.app/public/uploads/Images/${image}`}
                 alt="Shoes"
               />
             </div>

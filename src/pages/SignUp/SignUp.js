@@ -25,7 +25,7 @@ const SignUp = () => {
   const handleSignup = (event) => {
     event.preventDefault();
     axios({
-      url: "http://localhost:5000/api/v1/auth/register",
+      url: "https://enthusiastic-lion-neckerchief.cyclic.app/api/v1/auth/register",
       method: "POST",
       data: signupForm,
     })
